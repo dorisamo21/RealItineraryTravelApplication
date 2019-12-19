@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@id/nav_maps"
+            android:icon="@drawable/ic_menu_globe"
+            android:title="@string/menu_map" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/ic_menu_itinerary"
+            android:title="@string/menu_itinerary" >
+            <menu>
+                <item
+                    android:id="@+id/new_itinerary"
+                    android:icon="@drawable/ic_menu_itinerary"
+                    android:title="New Itinerary" />
+                <item
+                    android:id="@+id/edit_itinerary"
+                    android:icon="@drawable/ic_menu_itinerary"
+                    android:title="My Itinerary" />
+<!--                <item-->
+<!--                    android:id="@+id/browse_itinerary"-->
+<!--                    android:icon="@drawable/ic_menu_itinerary"-->
+<!--                    android:title="Browse Itinerary" />-->
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_profile"
+            android:title="@string/menu_profile" >
+            <menu>
+                <item
+                    android:id="@+id/nav_signup"
+                    android:icon="@drawable/ic_menu_profile"
+                    android:title="Sign Up" />
+                <item
+                    android:id="@+id/edit_profile"
+                    android:icon="@drawable/ic_menu_profile"
+                    android:title="Edit Profile" />
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/ic_menu_profile"
+                    android:title="Log In"
+                    />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_menu_profile"
+                    android:title="Log Out"
+                    />
+
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@drawable/ic_menu_friend"
+            android:title="@string/menu_friends" >
+            <menu>
+                <item
+                    android:id="@+id/friend_list"
+                    android:icon="@drawable/ic_menu_friend"
+                    android:title="Friends List" />
+
+                <item
+                    android:id="@+id/nav_add_friend"
+                    android:icon="@drawable/ic_menu_friend"
+                    android:title="Add Friend" />
+                <item
+                    android:id="@+id/nav_friend_list"
+                    android:icon="@drawable/ic_menu_friend"
+                    android:title="Friend List"
+                    />
+
+
+            </menu>
+        </item>
+    </group>
+<!--    <group android:checkableBehavior="single">-->
+<!--        <item-->
+<!--            android:id="@+id/nav_eventsubmit"-->
+<!--            android:icon="@drawable/ic_menu_eventsubmit"-->
+<!--            android:title="@string/menu_eventsubmit" >-->
+<!--            <menu>-->
+<!--                <item-->
+<!--                    android:id="@+id/submit_event"-->
+<!--                    android:icon="@drawable/ic_menu_eventsubmit"-->
+<!--                    android:title="Submit Event" />-->
+<!--                <item-->
+<!--                    android:icon="@drawable/ic_menu_eventsubmit"-->
+<!--                    android:title="Edit Event" />-->
+<!--            </menu>-->
+<!--        </item>-->
+<!--    </group>-->
+</menu>

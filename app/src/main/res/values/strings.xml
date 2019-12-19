@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">RitaApp</string>
+    <string name="nav_header_title">RITA</string>
+    <string name="nav_header_subtitle">Real_Time Itinerary Travel App</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_map">Map</string>
+    <string name="menu_itinerary">Itinerary</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_friends">Friends</string>
+    <string name="menu_eventsubmit">Submit Events</string>
+    <string name="maps_search">Search</string>
+    <string name="action_preferences">Preferences</string>
+    <string name="update_profile">Update My Profile</string>
+
+    <string name="manItin">Start\nManual\nItinerary</string>
+    <string name="autoItin">Get\nAutomated\nItinerary</string>
+    <string name="locHint">Enter location (zipcode, city)</string>
+    <string name="preferences">Preferences</string>
+    <string name="dash">-</string>
+    <string name="food_n_drink">Food and Drink</string>
+    <string name="landmarks">LandMarks</string>
+    <string name="museums">Museums</string>
+    <string name="outdoor_parks_zoos">Parks and Zoos</string>
+    <string name="concerts_festivals">Concerts and Festivals</string>
+    <string name="music_performances">Music Performances</string>
+    <string name="theaters_shows_expos">Theaters/Shows/Expos</string>
+    <string name="community">Community</string>
+    <string name="sports">Sports</string>
+    <string name="shopping">Shopping</string>
+    <string name="nightlife_entertainment">Nightlife Entertainment</string>
+    <string name="tours">Tours</string>
+    <string name="markets">Markets</string>
+    <string name="family">Family</string>
+    <string name="natural_geographical">Natural/Geographical</string>
+    <string name="accommodation">Accommodation</string>
+</resources>

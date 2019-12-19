@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "309267655573",
+    "firebase_url": "https://rita-users.firebaseio.com",
+    "project_id": "rita-users",
+    "storage_bucket": "rita-users.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309267655573:android:187c26e4d6b53fcaa9649c",
+        "android_client_info": {
+          "package_name": "edu.ccsu.ritaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309267655573-a3tjdcm27qpc8fhil2p8tvkbbkc17oqo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.ccsu.ritaapp",
+            "certificate_hash": "66c8b17596eb9b12f473022589890cc00b477b29"
+          }
+        },
+        {
+          "client_id": "309267655573-t9mj2162buirgph1fd916tk2ob5iei68.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmeQUxf__MjOdPyKSPRyOxs2xhV2z6xaw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309267655573-t9mj2162buirgph1fd916tk2ob5iei68.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

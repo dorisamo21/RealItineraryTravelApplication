@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/sv1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height = "wrap_content"
+        tools:context="edu.ccsu.ritaapp.ui.profile.ProfileFragment"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/input_profile_email"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="false"
+            android:gravity="left"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/input_name"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:ems="10"
+                android:hint="User Name"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_profile_password"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Preferences -->
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scaleX=".80"
+            android:scaleY=".9">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/preferences" />
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Not \ninterested" />
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="" />
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Very \ninterested"
+                    android:gravity="right" />
+
+            </LinearLayout>
+            <RadioGroup
+                android:id="@+id/RG_museums"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:tag="00_RG_museums">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/museums"
+                    />
+
+                <RadioButton
+                    android:id="@+id/RB_museums_1"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_red_light" />
+
+                <RadioButton
+                    android:id="@+id/RB_museums_2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_orange_light"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/RB_museums_3"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/RG_tours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:tag="01_RG_tours">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tours" />
+
+                <RadioButton
+                    android:id="@+id/RB_tours_1"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_red_light" />
+
+                <RadioButton
+                    android:id="@+id/RB_tours_2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_orange_light"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/RB_tours_3"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/RG_markets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:tag="02_RG_markets">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/markets" />
+
+                <RadioButton
+                    android:id="@+id/RB_markets_1"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_red_light" />
+
+                <RadioButton
+                    android:id="@+id/RB_markets_2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_orange_light"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/RB_markets_3"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/RG_family"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:tag="03_RG_family">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/family" />
+
+                <RadioButton
+                    android:id="@+id/RB_family_1"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_red_light" />
+
+                <RadioButton
+                    android:id="@+id/RB_family_2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_orange_light"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/RB_family_3"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/RG_landmarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:tag="04_RG_landmarks">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/landmarks" />
+
+                <RadioButton
+                    android:id="@+id/RB_landmarks_1"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_red_light" />
+
+                <RadioButton
+                    android:id="@+id/RB_landmarks_2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_orange_light"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/RB_landmarks_3"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/RG_community"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:tag="05_RG_community">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/community" />
+
+                <RadioButton
+                    android:id="@+id/RB_community_1"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_red_light" />
+
+                <RadioButton
+                    android:id="@+id/RB_community_2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_orange_light"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/RB_community_3"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/RG_sports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:tag="06_RG_sports">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sports" />
+
+                <RadioButton
+                    android:id="@+id/RB_sports_1"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_red_light" />
+
+                <RadioButton
+                    android:id="@+id/RB_sports_2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_orange_light"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/RB_sports_3"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/RG_shopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:tag="07_RG_shopping">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shopping" />
+
+                <RadioButton
+                    android:id="@+id/RB_shopping_1"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_red_light" />
+
+                <RadioButton
+                    android:id="@+id/RB_shopping_2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_orange_light"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/RB_shopping_3"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/RG_food_n_drink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:tag="08_RG_food_n_drink">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/food_n_drink" />
+
+                <RadioButton
+                    android:id="@+id/RB_food_n_drink_1"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_red_light" />
+
+                <RadioButton
+                    android:id="@+id/RB_food_n_drink_2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_orange_light"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/RB_food_n_drink_3"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/RG_concerts_festivals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:tag="09_RG_concerts_festivals">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/concerts_festivals" />
+
+                <RadioButton
+                    android:id="@+id/RB_concerts_festivals_1"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_red_light" />
+
+                <RadioButton
+                    android:id="@+id/RB_concerts_festivals_2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_orange_light"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/RB_concerts_festivals_3"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/RG_music_performances"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:tag="10_RG_music_performance">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/music_performances" />
+
+                <RadioButton
+                    android:id="@+id/RB_music_performances_1"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_red_light" />
+
+                <RadioButton
+                    android:id="@+id/RB_music_performances_2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_orange_light"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/RB_music_performances_3"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/RG_theaters_shows_expos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:tag="11_RG_theaters_shows_expos">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/theaters_shows_expos" />
+
+                <RadioButton
+                    android:id="@+id/RB_theaters_shows_expos_1"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_red_light" />
+
+                <RadioButton
+                    android:id="@+id/RB_theaters_shows_expos_2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_orange_light"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/RB_theaters_shows_expos_3"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/RG_nightlife_entertainment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:tag="12_RG_nightlife_entertainnmet">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nightlife_entertainment" />
+
+                <RadioButton
+                    android:id="@+id/RB_nightlife_entertainment_1"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_red_light" />
+
+                <RadioButton
+                    android:id="@+id/RB_nightlife_entertainment_2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_orange_light"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/RB_nightlife_entertainment_3"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/RG_natural_geographical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:tag="13_RG_natural_geographical">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natural_geographical" />
+
+                <RadioButton
+                    android:id="@+id/RB_natural_geographical_1"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_red_light" />
+
+                <RadioButton
+                    android:id="@+id/RB_natural_geographical_2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_orange_light"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/RB_natural_geographical_3"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light"
+                    tools:ignore="TooManyViews" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/RG_accommodation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:tag="14_RG_accommodation">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/accommodation" />
+
+                <RadioButton
+                    android:id="@+id/RB_accommodation_1"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_red_light" />
+
+                <RadioButton
+                    android:id="@+id/RB_accommodation_2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_orange_light"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/RB_accommodation_3"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/RG_outdoor_parks_zoos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:tag="15_RG_outdoor_parks_zoos">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/outdoor_parks_zoos" />
+
+                <RadioButton
+                    android:id="@+id/RG_outdoor_parks_zoos_1"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_red_light" />
+
+                <RadioButton
+                    android:id="@+id/RG_outdoor_parks_zoos_2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_orange_light"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/RG_outdoor_parks_zoos_3"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/btn_update"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/update_profile" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/textView"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="TextView" />-->
+
+
+    </LinearLayout>
+</ScrollView>

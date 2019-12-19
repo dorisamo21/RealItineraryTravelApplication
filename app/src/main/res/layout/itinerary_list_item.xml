@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="8dp"
+    android:background="@android:color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/itineraryId"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="Itinerary ID"
+            android:textSize="15sp"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/viewItnContent"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text="view"/>
+        <Button
+            android:id="@+id/deletefriend"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="del"/>
+</LinearLayout>
